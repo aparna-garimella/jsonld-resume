@@ -1,482 +1,532 @@
 {
-	"data": {
-		"profile": {
-			"heading": "Profile"
-		},
-		"objective": {
-			"enable": true,
-			"heading": "Professional Objective"
-		},
-		"work": {
-			"enable": true,
-			"heading": "Work Experience"
-		},
-		"education": {
-			"enable": true,
-			"heading": "Education"
-		},
-		"awards": {
-			"enable": true,
-			"heading": "Honors & Awards"
-		},
-		"certifications": {
-			"enable": true,
-			"heading": "Certifications"
-		},
-		"skills": {
-			"enable": true,
-			"heading": "Skills"
-		},
-		"Memberships": {
-			"enable": true,
-			"heading": "Memberships"
-		},
-		"languages": {
-			"enable": true,
-			"heading": "Languages"
-		},
-		"references": {
-			"enable": true,
-			"heading": "References"
-		},
-		"extras": {
-			"enable": true,
-			"heading": "Additional Information"
-		},
-		"address": {
-			"enable": true,
-			"heading" : "Address"
-		},
-		"jsonld": {
-			"@context": [
-				"https://jsonldresume.github.io/skill/context.json",
-				{
-					"gender": {
-						"@id": "schema:gender",
-						"@type": "@vocab"
-					},
-					"skill:classOfAward": {
-						"@id": "skill:classOfAward",
-						"@type": "@vocab"
-					},
-					"skill:securityClearance": {
-						"@id": "skill:securityClearance",
-						"@type": "@vocab"
-					},
-					"category": {
-						"@id": "schema:category",
-						"@type": "@vocab"
-					},
-					"dayOfWeek": {
-						"@id": "schema:dayOfWeek",
-						"@type": "@vocab"
-					}
-				}
-			],
-			"@graph": [
-				{
-					"award": [
-						{
-							"@type": "skill:Award",
-							"@id": "_:cebcd613-36a8-4cde-851c-b2879b140ef0#enable",
-							"skill:title": "Judge",
-							"skill:conferredBy": "Peak-to-Peak chartered school",
-							"description": "judge at their science fair"
-						},
-						{
-							"@type": "skill:Award",
-							"@id": "_:cba9b860-347a-4969-a6f0-612f4218764c#enable",
-							"skill:title": "3rd place",
-							"skill:conferredBy": "national physics federtion",
-							"description": "Third place in national physics competition"
-						}
-					]
-				},
-				{
-					"givenName": [
-						{
-							"@language": "en",
-							"@value": "Ehsan"
-						},
-						{
-							"@language": "ar",
-							"@value": "احسان"
-						}
-					],
-					"familyName": [
-						{
-							"@language": "en",
-							"@value": "Shariati"
-						},
-						{
-							"@language": "ar",
-							"@value": "شریعتی"
-						}
-					],
-					"address": [
-						{
-							"@id": "_:f5ef8e0e-89c8-4100-ae22-81887cf3f373",
-							"@type": "PostalAddress",
-							"hoursAvailable": {
-								"@id": "_:f5ef8e0e-89c8-4100-ae22-81887cf3f373#hoursAvailable",
-								"@type": "OpeningHoursSpecification",
-								"validThrough": "2099-01-01"
-							},
-							"addressCountry": "Canada",
-							"streetAddress": "20 Test dr",
-							"addressRegion": "ON",
-							"addressLocality": "Toronto",
-							"postalCode": "H0H 0H0",
-							"contactType": "",
-							"sameAs": "https://www.google.com/maps/place/Rosedale+Golf+Club/@43.7259752,-79.4099022,14z/data=!4m8!1m2!2m1!1s20+test+dr!3m4!1s0x882b32b8192bf409:0x809cd74491c3e5b9!8m2!3d43.7364762!4d-79.3992555"
-						}
-					],
-					"description": "Full-stack developer",
-					"sameAs": [
-						"https://jsonldresume.org"
-					],
-					"image": {
-						"contentUrl": "https://static.projectmanagement.com/images/profile-photos/46843803.jpg",
-						"@id": "_:#image",
-						"@type": "ImageObject"
-					},
-					"contactPoint": [
-						{
-							"@id": "_:2467fb27-b4a8-4953-93fa-ee27ef20c7a7",
-							"@type": "ContactPoint",
-							"description": "This is main contact",
-							"contactType": "Preferred",
-							"email": "info@jsonldresume.org",
-							"telephone": "+1 (888) 888-8888"
-						}
-					],
-					"seeks": [
-						{
-							"@id": "_:fe2bddc5-0c95-4e33-b245-d0c1eb22789a",
-							"@type": "Demand",
-							"description": "Innovative and dedicated Application Developer and Project Manager, with more than 10 years of experience leading application development, IT service, and engineering projects. Partners with CEOs, department heads, and internal and external stakeholders, developing powerful solutions to operational challenges and instituting leading-edge technologies. Ensures fiscal restraint and detailed scheduling, effectively controlling project costs and timelines to consistently deliver projects to successful conclusion. Leads and motivates staff and contractors, building top-performing teams by applying a situational leadership style and managing projects in Agile environment. Fully fluent in English and Farsi, with skills in Arabic. I also have experience in stock trading and investment management and fundamental and technical analysis of companies and stocks.",
-							"availabilityStarts": "2021-01-01",
-							"availabilityEnds": "2022-01-01",
-							"availableAtOrFrom": {
-								"address": {
-									"@type": "PostalAddress",
-									"@id": "_:fe2bddc5-0c95-4e33-b245-d0c1eb22789a_availableAtOrFrom_address",
-									"addressLocality": "Toronto",
-									"addressRegion": "ON",
-									"addressCountry": "Canada"
-								},
-								"@type": "Place",
-								"@id": "_:fe2bddc5-0c95-4e33-b245-d0c1eb22789a_availableAtOrFrom"
-							},
-							"deliveryLeadTime": {}
-						}
-					],
-					"hasOccupation": [
-						{
-							"@type": "EmployeeRole",
-							"@id": "_:a905d9ec-1a1f-4629-8db2-b3ec2e626f58#enable",
-							"hasOccupation": {
-								"@id": "_:a905d9ec-1a1f-4629-8db2-b3ec2e626f58#hasOccupation",
-								"@type": "Occupation",
-								"name": "",
-								"skills": [
-									"Project Management",
-									"Programming"
-								],
-								"responsibilities": [
-									"Directing company",
-									"Hiring talents",
-									"Managing financials",
-									"Insure daily follow-up on requests, mini-projects and issues"
-								]
-							},
-							"subjectOf": {
-								"@type": "BusinessEvent",
-								"id": "_:a905d9ec-1a1f-4629-8db2-b3ec2e626f58#subjectOf",
-								"organizer": {
-									"@type": "Organization",
-									"id": "_:a905d9ec-1a1f-4629-8db2-b3ec2e626f58#subjectOf#organizer",
-									"name": "Direction X Corporation"
-								}
-							},
-							"roleName": "Director",
-							"startDate": "2018-01-01",
-							"endDate": "2021-01-01",
-							"description": "Delivered successful projects that drove improvements to business outcomes and KPIs"
-						}
-					],
-					"hasCredential": [
-						{
-							"@type": "EducationalOccupationalCredential",
-							"@id": "_:86baf285-43a0-4ed9-9b73-85533b4d3f86#enable",
-							"aggregateRating": {
-								"@id": "_:86baf285-43a0-4ed9-9b73-85533b4d3f86#aggregateRating",
-								"@type": "aggregateRating",
-								"bestRating": "4",
-								"ratingValue": "3.7",
-								"name": "GPA",
-								"itemReviewed": {
-									"@id": "_:86baf285-43a0-4ed9-9b73-85533b4d3f86#enable"
-								}
-							},
-							"credentialCategory": "degree",
-							"educationalLevel": "Masters of Science",
-							"abstract": "I was an active member of university of Colorado associations.",
-							"teaches": [
-								"Electrical systems",
-								"Programming"
-							],
-							"about": {
-								"@id": "_:86baf285-43a0-4ed9-9b73-85533b4d3f86#about",
-								"@type": "EducationalOccupationalProgram",
-								"educationalCredentialAwarded": "Electrical Engineering",
-								"startDate": "2008-01-01",
-								"endDate": "2010-01-01",
-								"provider": {
-									"@id": "_:86baf285-43a0-4ed9-9b73-85533b4d3f86#about#provider",
-									"@type": "CollegeOrUniversity",
-									"name": "University of Colorado at Boudler"
-								}
-							}
-						}
-					],
-					"memberOf": [
-						{
-							"@id": "_:028ef777-abf2-4a9b-a08d-e587bcae6751#enable",
-							"@type": "Role",
-							"startDate": "2018-01-01",
-							"endDate": "2019-01-01",
-							"roleName": "member",
-							"memberOf": {
-								"@id": "_:028ef777-abf2-4a9b-a08d-e587bcae6751#memberOf",
-								"@type": "ProgramMembership",
-								"url": "",
-								"programName": "Salsa Dance",
-								"description": ""
-							}
-						}
-					],
-					"knowsLanguage": [
-						{
-							"@type": "Language",
-							"@id": "_:7e78b654-5439-463c-a7cf-9a0f5eec5f70",
-							"name": "English"
-						},
-						{
-							"@type": "Language",
-							"@id": "_:55fa78ed-7afb-4e3e-89e1-25e32088b951",
-							"name": "Farsi"
-						}
-					],
-					"interactionStatistic": [
-						{
-							"@id": "_:Reference#bd94bed6-a193-4f5c-8988-aec8fb28869a",
-							"@type": "InteractionCounter",
-							"disambiguatingDescription": "Reference",
-							"interactionType": {
-								"@id": "_:Reference#bd94bed6-a193-4f5c-8988-aec8fb28869a#interactionType",
-								"@type": "AssessAction",
-								"participant": {
-									"@id": "_:Reference#bd94bed6-a193-4f5c-8988-aec8fb28869a#interactionType#participant",
-									"@type": "Person",
-									"givenName": "John",
-									"familyName": "Doe",
-									"jobTitle": "CEO, imaginary corp",
-									"telephone": "+1 (777) 777-7777",
-									"email": "nomail@mail.com"
-								},
-								"result": [
-									{
-										"@id": "_:Reference#bd94bed6-a193-4f5c-8988-aec8fb28869a#result",
-										"@type": "Review",
-										"itemReviewed": {},
-										"reviewAspect": [],
-										"reviewRating": {
-											"@id": "_:Reference#bd94bed6-a193-4f5c-8988-aec8fb28869a#result#reviewRating",
-											"@type": "Rating",
-											"ratingValue": "5",
-											"bestRating": "5",
-											"ratingExplanation": ""
-										}
-									}
-								]
-							},
-							"result": [
-								{
-									"reviewRating": {
-										"ratingExplanation": "This is a sample reference"
-									}
-								}
-							]
-						},
-						{
-							"@id": "_:Reference#ba8fda2e-0d99-446b-8484-bc01af400b4d",
-							"@type": "InteractionCounter",
-							"disambiguatingDescription": "Reference",
-							"interactionType": {
-								"@id": "_:Reference#ba8fda2e-0d99-446b-8484-bc01af400b4d#interactionType",
-								"@type": "AssessAction",
-								"participant": {
-									"@id": "_:Reference#ba8fda2e-0d99-446b-8484-bc01af400b4d#interactionType#participant",
-									"@type": "Person",
-									"givenName": "Jack",
-									"familyName": "Dee",
-									"jobTitle": "CEO, sleep corp",
-									"telephone": "+1 (666) 666-6666",
-									"email": "test@mail.com"
-								},
-								"result": [
-									{
-										"@id": "_:Reference#ba8fda2e-0d99-446b-8484-bc01af400b4d#result",
-										"@type": "Review",
-										"itemReviewed": {},
-										"reviewAspect": [],
-										"reviewRating": {
-											"@id": "_:Reference#ba8fda2e-0d99-446b-8484-bc01af400b4d#result#reviewRating",
-											"@type": "Rating",
-											"ratingValue": "5",
-											"bestRating": "5",
-											"ratingExplanation": ""
-										}
-									}
-								]
-							},
-							"result": [
-								{
-									"reviewRating": {
-										"ratingExplanation": "This is second sample reference"
-									}
-								}
-							]
-						}
-					],
-					"identifier": [
-						{
-							"@type": "PropertyValue",
-							"@id": "_:Extras_6d651394-5740-47c5-a172-5326ec688e26",
-							"propertyID": "Hobbies",
-							"value": "Skiing, Dancing"
-						}
-					],
-					"award": [
-						"Judge",
-						"3rd place"
-					],
-					"@context": "http://schema.org/"
-				}
-			]
-		}
-	},
-	"theme": {
-		"layout": "castform",
-		"font": {
-			"family": "Montserrat"
-		},
-		"colors": {
-			"background": "#ffffff",
-			"primary": "#212121",
-			"accent": "#f44336"
-		},
-		"layoutblocks": {
-			"onyx": [
-				[
-					"objective",
-					"work",
-					"education",
-					"projects"
-				],
-				[
-					"hobbies",
-					"languages",
-					"awards",
-					"certifications"
-				],
-				[
-					"skills",
-					"references"
-				]
-			],
-			"pikachu": [
-				[
-					"skills",
-					"languages",
-					"hobbies",
-					"awards",
-					"certifications"
-				],
-				[
-					"work",
-					"education",
-					"projects",
-					"references"
-				]
-			],
-			"gengar": [
-				[
-					"objective",
-					"skills"
-				],
-				[
-					"awards",
-					"certifications",
-					"languages",
-					"references",
-					"hobbies"
-				],
-				[
-					"work",
-					"education",
-					"projects"
-				]
-			],
-			"castform": [
-				[
-					"awards",
-					"certifications",
-					"languages",
-					"hobbies"
-				],
-				[
-					"objective",
-					"work",
-					"education",
-					"skills",
-					"projects",
-					"references"
-				]
-			],
-			"glalie": [
-				[
-					"awards",
-					"certifications",
-					"hobbies"
-				],
-				[
-					"objective",
-					"work",
-					"education",
-					"skills",
-					"projects",
-					"languages",
-					"references"
-				]
-			],
-			"celebi": [
-				[
-					"awards",
-					"certifications",
-					"languages",
-					"hobbies"
-				],
-				[
-					"objective",
-					"work",
-					"education",
-					"skills",
-					"projects",
-					"references"
-				]
-			]
-		}
-	}
+    "data": {
+        "jsonld": {
+            "@context": [
+                "https://jsonldresume.github.io/skill/context.json",
+                {
+                    "gender": {
+                        "@id": "schema:gender",
+                        "@type": "@vocab"
+                    },
+                    "skill:classOfAward": {
+                        "@id": "skill:classOfAward",
+                        "@type": "@vocab"
+                    },
+                    "skill:securityClearance": {
+                        "@id": "skill:securityClearance",
+                        "@type": "@vocab"
+                    },
+                    "category": {
+                        "@id": "schema:category",
+                        "@type": "@vocab"
+                    },
+                    "dayOfWeek": {
+                        "@id": "schema:dayOfWeek",
+                        "@type": "@vocab"
+                    }
+                }
+            ],
+            "@graph": [
+                {
+                    "@type": "skill:Resume",
+                    "award": [
+                        {
+                            "@type": "skill:Award",
+                            "@id": "_:74a0234b-7850-4e15-a180-326686db6aad#enable",
+                            "skill:title": "Employee of the Year award (2010)",
+                            "skill:nativeLabel": "",
+                            "description": ""
+                        },
+                        {
+                            "@type": "skill:Award",
+                            "@id": "_:1587a3db-126b-4311-beab-678f3e4db0a4#enable",
+                            "skill:title": "Recipient of Kentucky Graduate Scholarship (2006)",
+                            "skill:nativeLabel": "",
+                            "description": ""
+                        },
+                        {
+                            "@type": "skill:Award",
+                            "@id": "_:905345a9-e51c-4267-88f6-6a09de6ed048#enable",
+                            "skill:title": "University gold medal for Electronics and Telematics (2005)",
+                            "skill:nativeLabel": "",
+                            "description": ""
+                        }
+                    ]
+                },
+                {
+                    "@type": "Person",
+                    "givenName": [
+                        {
+                            "@language": "en",
+                            "@value": "Aparna"
+                        }
+                    ],
+                    "familyName": [
+                        {
+                            "@language": "en",
+                            "@value": "Garimella"
+                        }
+                    ],
+                    "address": [
+                        {
+                            "@id": "_:bee553f3-ac59-4db8-96a3-0d4a6d1040e6",
+                            "@type": "PostalAddress",
+                            "hoursAvailable": {
+                                "@id": "_:bee553f3-ac59-4db8-96a3-0d4a6d1040e6#hoursAvailable",
+                                "@type": "OpeningHoursSpecification",
+                                "validThrough": "2099-01-01"
+                            },
+                            "addressCountry": "United States",
+                            "streetAddress": "",
+                            "addressRegion": "Texas",
+                            "addressLocality": "Cypress,",
+                            "postalCode": "",
+                            "contactType": "",
+                            "sameAs": ""
+                        }
+                    ],
+                    "image": {
+                        "contentUrl": "",
+                        "@id": "_:#image",
+                        "@type": "ImageObject"
+                    },
+                    "description": "Principal Software Engineer",
+                    "sameAs": [
+                        "https://www.linkedin.com/in/aparnagarimella/",
+                        "https://github.com/aparna-garimella"
+                    ],
+                    "seeks": [
+                        {
+                            "@id": "_:c8d20340-5a27-477a-a697-8f0e39e3ae08",
+                            "@type": "Demand",
+                            "description": "Quality driven software professional with excellent communication and leadership skills, experienced in development, architecture and maintenance of complex business applications. Offering overall 10+ years of experience in Software Engineering and over 6 years of experience building, mentoring and guiding Agile teams as a principal engineer/technical/team lead.\n",
+                            "availabilityStarts": "",
+                            "availabilityEnds": "",
+                            "availableAtOrFrom": {
+                                "address": {
+                                    "@type": "PostalAddress",
+                                    "@id": "_:c8d20340-5a27-477a-a697-8f0e39e3ae08_availableAtOrFrom_address",
+                                    "addressLocality": "Cypress",
+                                    "addressRegion": "TX",
+                                    "addressCountry": "United States"
+                                },
+                                "@type": "Place",
+                                "@id": "_:c8d20340-5a27-477a-a697-8f0e39e3ae08_availableAtOrFrom"
+                            },
+                            "deliveryLeadTime": {}
+                        }
+                    ],
+                    "hasOccupation": [
+                        {
+                            "@type": "EmployeeRole",
+                            "@id": "_:00013e46-8936-42c8-9c2e-6fce4d062c67#enable",
+                            "hasOccupation": {
+                                "@id": "_:00013e46-8936-42c8-9c2e-6fce4d062c67#hasOccupation",
+                                "@type": "Occupation",
+                                "name": "",
+                                "skills": [],
+                                "responsibilities": [
+                                    "Architect, Mentor, Review & Contribute"
+                                ]
+                            },
+                            "subjectOf": {
+                                "@type": "BusinessEvent",
+                                "id": "_:00013e46-8936-42c8-9c2e-6fce4d062c67#subjectOf",
+                                "organizer": {
+                                    "@type": "Organization",
+                                    "id": "_:00013e46-8936-42c8-9c2e-6fce4d062c67#subjectOf#organizer",
+                                    "name": "S & P Global"
+                                }
+                            },
+                            "roleName": "Principal Engineer",
+                            "startDate": "06/01/2020",
+                            "endDate": "",
+                            "description": "Learning and working with Knowledge Graphs, RDF, JSON-LD, Hydra, REST API & Microservices in the cloud (AWS)."
+                        },
+                        {
+                            "@type": "EmployeeRole",
+                            "@id": "_:e2abdf4d-78e8-4c73-8124-4c6efe2288fd#enable",
+                            "hasOccupation": {
+                                "@id": "_:e2abdf4d-78e8-4c73-8124-4c6efe2288fd#hasOccupation",
+                                "@type": "Occupation",
+                                "name": "",
+                                "skills": [],
+                                "responsibilities": [
+                                    "Lead, Design, Develop & Review "
+                                ]
+                            },
+                            "subjectOf": {
+                                "@type": "BusinessEvent",
+                                "id": "_:e2abdf4d-78e8-4c73-8124-4c6efe2288fd#subjectOf",
+                                "organizer": {
+                                    "@type": "Organization",
+                                    "id": "_:e2abdf4d-78e8-4c73-8124-4c6efe2288fd#subjectOf#organizer",
+                                    "name": "PrimeroEdge"
+                                }
+                            },
+                            "roleName": "Technical Lead",
+                            "startDate": "11/01/2019",
+                            "endDate": "06/01/2021",
+                            "description": "Design and develop REST APIs mainly using C# & SQL using Azure cloud services."
+                        },
+                        {
+                            "@type": "EmployeeRole",
+                            "@id": "_:06a6cf26-f279-4707-9e3a-d80e8fc751c9#enable",
+                            "hasOccupation": {
+                                "@id": "_:06a6cf26-f279-4707-9e3a-d80e8fc751c9#hasOccupation",
+                                "@type": "Occupation",
+                                "name": "",
+                                "skills": [],
+                                "responsibilities": []
+                            },
+                            "subjectOf": {
+                                "@type": "BusinessEvent",
+                                "id": "_:06a6cf26-f279-4707-9e3a-d80e8fc751c9#subjectOf",
+                                "organizer": {
+                                    "@type": "Organization",
+                                    "id": "_:06a6cf26-f279-4707-9e3a-d80e8fc751c9#subjectOf#organizer",
+                                    "name": "Cybersoft"
+                                }
+                            },
+                            "roleName": "SE Consultant",
+                            "startDate": "07/01/2015",
+                            "endDate": "12/01/2016",
+                            "description": ""
+                        },
+                        {
+                            "@type": "EmployeeRole",
+                            "@id": "_:80967576-0d76-40c1-9c73-c8e3a906739d#enable",
+                            "hasOccupation": {
+                                "@id": "_:80967576-0d76-40c1-9c73-c8e3a906739d#hasOccupation",
+                                "@type": "Occupation",
+                                "name": "",
+                                "skills": [],
+                                "responsibilities": []
+                            },
+                            "subjectOf": {
+                                "@type": "BusinessEvent",
+                                "id": "_:80967576-0d76-40c1-9c73-c8e3a906739d#subjectOf",
+                                "organizer": {
+                                    "@type": "Organization",
+                                    "id": "_:80967576-0d76-40c1-9c73-c8e3a906739d#subjectOf#organizer",
+                                    "name": "Cybersoft Technologies"
+                                }
+                            },
+                            "roleName": "SDE Team Lead",
+                            "startDate": "05/01/2008",
+                            "endDate": "09/01/2013",
+                            "description": "C# developer and Team Lead"
+                        },
+                        {
+                            "@type": "EmployeeRole",
+                            "@id": "_:bfd893e4-4c2b-40dd-8795-0f913324a043#enable",
+                            "hasOccupation": {
+                                "@id": "_:bfd893e4-4c2b-40dd-8795-0f913324a043#hasOccupation",
+                                "@type": "Occupation",
+                                "name": "",
+                                "skills": [],
+                                "responsibilities": []
+                            },
+                            "subjectOf": {
+                                "@type": "BusinessEvent",
+                                "id": "_:bfd893e4-4c2b-40dd-8795-0f913324a043#subjectOf",
+                                "organizer": {
+                                    "@type": "Organization",
+                                    "id": "_:bfd893e4-4c2b-40dd-8795-0f913324a043#subjectOf#organizer",
+                                    "name": "Wolters Kluwer Financial Services"
+                                }
+                            },
+                            "roleName": "SE Consultant",
+                            "startDate": "11/01/2007",
+                            "endDate": "04/01/2008",
+                            "description": ""
+                        },
+                        {
+                            "@type": "EmployeeRole",
+                            "@id": "_:14a9d9e1-3206-45d0-9716-99a0adea9014#enable",
+                            "hasOccupation": {
+                                "@id": "_:14a9d9e1-3206-45d0-9716-99a0adea9014#hasOccupation",
+                                "@type": "Occupation",
+                                "name": "",
+                                "skills": [],
+                                "responsibilities": []
+                            },
+                            "subjectOf": {
+                                "@type": "BusinessEvent",
+                                "id": "_:14a9d9e1-3206-45d0-9716-99a0adea9014#subjectOf",
+                                "organizer": {
+                                    "@type": "Organization",
+                                    "id": "_:14a9d9e1-3206-45d0-9716-99a0adea9014#subjectOf#organizer",
+                                    "name": "Valuelabs"
+                                }
+                            },
+                            "roleName": "Software Engineer",
+                            "startDate": "06/01/2005",
+                            "endDate": "07/01/2006",
+                            "description": ""
+                        }
+                    ],
+                    "award": [
+                        "Employee of the Year award (2010)",
+                        "Recipient of Kentucky Graduate Scholarship (2006)",
+                        "University gold medal for Electronics and Telematics (2005)"
+                    ],
+                    "hasCredential": [
+                        {
+                            "@type": "EducationalOccupationalCredential",
+                            "@id": "_:d5261873-f3d0-4158-a82b-dc4b790444f5#enable",
+                            "aggregateRating": {
+                                "@id": "_:d5261873-f3d0-4158-a82b-dc4b790444f5#aggregateRating",
+                                "@type": "aggregateRating",
+                                "bestRating": "4",
+                                "ratingValue": "3.9",
+                                "name": "GPA",
+                                "itemReviewed": {
+                                    "@id": "_:d5261873-f3d0-4158-a82b-dc4b790444f5#enable"
+                                }
+                            },
+                            "credentialCategory": "degree",
+                            "educationalLevel": "Masters",
+                            "abstract": "",
+                            "teaches": [],
+                            "about": {
+                                "@id": "_:d5261873-f3d0-4158-a82b-dc4b790444f5#about",
+                                "@type": "EducationalOccupationalProgram",
+                                "educationalCredentialAwarded": "Electrical Engineering",
+                                "startDate": "2006-08",
+                                "endDate": "2007-12",
+                                "provider": {
+                                    "@id": "_:d5261873-f3d0-4158-a82b-dc4b790444f5#about#provider",
+                                    "@type": "CollegeOrUniversity",
+                                    "name": "University of Kentucky, Lexington, KY"
+                                }
+                            }
+                        },
+                        {
+                            "@type": "EducationalOccupationalCredential",
+                            "@id": "_:5f9acdd5-7e59-4abd-9dac-7eaf969f8618#enable",
+                            "aggregateRating": {
+                                "@id": "_:5f9acdd5-7e59-4abd-9dac-7eaf969f8618#aggregateRating",
+                                "@type": "aggregateRating",
+                                "bestRating": "4",
+                                "ratingValue": "3.9",
+                                "name": "GPA",
+                                "itemReviewed": {
+                                    "@id": "_:5f9acdd5-7e59-4abd-9dac-7eaf969f8618#enable"
+                                }
+                            },
+                            "credentialCategory": "degree",
+                            "educationalLevel": "Bachelor of Technology",
+                            "abstract": "",
+                            "teaches": [],
+                            "about": {
+                                "@id": "_:5f9acdd5-7e59-4abd-9dac-7eaf969f8618#about",
+                                "@type": "EducationalOccupationalProgram",
+                                "educationalCredentialAwarded": "Electronics and Telematics",
+                                "startDate": "2001-06",
+                                "endDate": "2005-06",
+                                "provider": {
+                                    "@id": "_:5f9acdd5-7e59-4abd-9dac-7eaf969f8618#about#provider",
+                                    "@type": "CollegeOrUniversity",
+                                    "name": "Jawaharlal Nehru Technological University, India"
+                                }
+                            }
+                        }
+                    ],
+                    "knowsLanguage": [
+                        {
+                            "@type": "Language",
+                            "@id": "_:8173fe0d-9d30-4337-a8ed-ad1889cb4b7b",
+                            "name": "English"
+                        }
+                    ]
+                }
+            ]
+        },
+        "profile": {
+            "heading": "",
+            "photo": "",
+            "firstName": "",
+            "lastName": "",
+            "subtitle": "",
+            "address": {
+                "line1": "",
+                "line2": "",
+                "line3": ""
+            },
+            "phone": "",
+            "website": "",
+            "email": ""
+        },
+        "contacts": {
+            "enable": false,
+            "heading": "Contacts"
+        },
+        "address": {
+            "enable": true,
+            "heading": "Address"
+        },
+        "objective": {
+            "enable": true,
+            "heading": "Objective",
+            "body": ""
+        },
+        "work": {
+            "enable": true,
+            "heading": "Work Experience",
+            "items": []
+        },
+        "education": {
+            "enable": true,
+            "heading": "Education",
+            "items": []
+        },
+        "awards": {
+            "enable": true,
+            "heading": "Honors & Awards",
+            "items": []
+        },
+        "certifications": {
+            "enable": true,
+            "heading": "Certifications",
+            "items": []
+        },
+        "skills": {
+            "enable": true,
+            "heading": "Skills",
+            "items": []
+        },
+        "memberships": {
+            "enable": true,
+            "heading": "Memberships",
+            "items": []
+        },
+        "languages": {
+            "enable": false,
+            "heading": "Languages",
+            "items": []
+        },
+        "references": {
+            "enable": false,
+            "heading": "References",
+            "items": []
+        },
+        "extras": {
+            "enable": false,
+            "heading": "Personal Information",
+            "items": []
+        }
+    },
+    "theme": {
+        "layout": "gengar",
+        "font": {
+            "family": ""
+        },
+        "colors": {
+            "background": "#ffffff",
+            "primary": "#212121",
+            "accent": "#f44336"
+        },
+        "layoutblocks": {
+            "onyx": [
+                [
+                    "objective",
+                    "work",
+                    "education",
+                    "projects"
+                ],
+                [
+                    "hobbies",
+                    "languages",
+                    "awards",
+                    "certifications"
+                ],
+                [
+                    "skills",
+                    "references"
+                ]
+            ],
+            "pikachu": [
+                [
+                    "skills",
+                    "languages",
+                    "hobbies",
+                    "awards",
+                    "certifications"
+                ],
+                [
+                    "work",
+                    "education",
+                    "projects",
+                    "references"
+                ]
+            ],
+            "gengar": [
+                [
+                    "objective",
+                    "skills"
+                ],
+                [
+                    "awards",
+                    "certifications",
+                    "languages",
+                    "references",
+                    "hobbies"
+                ],
+                [
+                    "work",
+                    "education",
+                    "projects"
+                ]
+            ],
+            "castform": [
+                [
+                    "awards",
+                    "certifications",
+                    "languages",
+                    "hobbies"
+                ],
+                [
+                    "objective",
+                    "work",
+                    "education",
+                    "skills",
+                    "projects",
+                    "references"
+                ]
+            ],
+            "glalie": [
+                [
+                    "awards",
+                    "certifications",
+                    "hobbies"
+                ],
+                [
+                    "objective",
+                    "work",
+                    "education",
+                    "skills",
+                    "projects",
+                    "languages",
+                    "references"
+                ]
+            ],
+            "celebi": [
+                [
+                    "awards",
+                    "certifications",
+                    "languages",
+                    "hobbies"
+                ],
+                [
+                    "objective",
+                    "work",
+                    "education",
+                    "skills",
+                    "projects",
+                    "references"
+                ]
+            ]
+        }
+    }
 }
